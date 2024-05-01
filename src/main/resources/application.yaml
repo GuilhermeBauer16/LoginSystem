@@ -1,0 +1,20 @@
+#security:
+#  jwt:
+#    token:
+#      secret-key: ${SECRET_KEY}
+#      expire-length: ${EXPIRE_LENGTH}
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/login_system?useTimezone=true&serverTimezone=UTC
+    username: ${USER_DATABASE}
+    password: ${USER_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+
+    show-sql: true
+
